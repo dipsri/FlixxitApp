@@ -91,7 +91,7 @@ export const removeMovieFromLiked = createAsyncThunk(
   async ({ movieId, email }) => {
     const {
       data: { movies },
-    } = await axios.put("https://server-2ab1.onrender.com/api/user/remove", {
+    } = await axios.put("http://localhost:8050/api/user/remove", {
       email,
       movieId,
     });
